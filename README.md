@@ -1,6 +1,6 @@
-# PIN-UP
+# PIN•UP App
 
-This is the sample application for
-[*One Month Rails: Teach Yourself to Code*](http://onemonthrails.com)
+This is my version of the sample application from
+[*One Month Rails: Teach Yourself to Code*](http://onemonthrails.com).
 
 by Ian Mac
