@@ -1,5 +1,5 @@
 @import 'variables';
-
+@import 'responsive';
 
 @import 'bootstrap';
 @import 'bootstrap-responsive';
@@ -53,6 +53,7 @@ body{
 	@include text-shadow;
 }
 .hero-unit {
+
 	h1 {
 		@include margin-bottom;
 		text-shadow: 2px 2px 4px rgba(72, 72, 72, .8);
@@ -84,12 +85,4 @@ footer {
 	margin-top: 50px;
 	padding-top: 30px;
 	border-top: 1px solid $brown;
-}
-
-@media (min-width: 980px) { 
-
-	body {
-		padding-top: 60px;
-	}
-
 }

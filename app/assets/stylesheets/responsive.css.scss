@@ -1,0 +1,18 @@
+@media (min-width: 1200px) {
+
+	.hero-unit {
+		background-image: image_url('bg-cb.jpg');
+		background-repeat: no-repeat;
+		background-position: top right;
+	}
+
+}
+
+@media (min-width: 980px) { 
+
+	body {
+		padding-top: 60px;
+	}
+
+
+}
