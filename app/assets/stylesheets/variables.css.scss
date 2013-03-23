@@ -1,0 +1,81 @@
+//
+// Variables
+// --------------------------------------------------
+
+
+// Grays
+// -------------------------
+$black:                 #000;
+$grayDarker:            #222;
+$grayDark:              #333;
+$gray:                  #555;
+$grayLight:             #999;
+$grayLighter:           #eee;
+$white:                 #fff;
+
+
+// Accent colors
+// -------------------------
+$green:					#549E48;
+$lightGreen:			#B2DACA;
+$creme:					#fed6a7;
+$tan:					#FDCE97;
+$brown:					#caa479;
+
+
+$orange:                #f98d44;
+$pink:					#F04155;
+
+$blue:                  #049cdb;
+$blueDark:              #0064cd;
+$red:                   #9d261d;
+$yellow:                #fbda3c;
+$purple:                #7a43b6;
+
+
+// Scaffolding
+// -------------------------
+$bodyBackground:        $creme;
+$textColor:             $gray;
+
+$navbarLinkColor:		$white;
+$navbarLinkColorHover:	$yellow;
+$navbarLinkColorActive:	$white;
+
+$heroUnitBackground: 	$orange;
+$heroUnitHeadingColor:	$yellow;
+$heroUnitLeadColor:		$creme;
+
+$btnPrimaryBackground: 	$green;
+$btnPrimaryBackgroundHighlight: darken($green, 10%);
+
+
+// Links
+// -------------------------
+$linkColor:             $pink;
+$linkColorHover:        darken($linkColor, 15%);
+
+
+
+// Typography
+// -------------------------
+$sansFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serifFontFamily:       Georgia, "Times New Roman", Times, serif;
+$monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
+
+$baseFontSize:          14px;
+$baseFontFamily:        $sansFontFamily;
+$baseLineHeight:        20px;
+$altFontFamily:         $serifFontFamily;
+
+$headingsFontFamily:    inherit; // empty to use BS default, $baseFontFamily
+$headingsFontWeight:    bold;    // instead of browser default, bold
+$headingsColor:         inherit; // empty to use BS default, $textColor
+
+@mixin text-shadow {
+	text-shadow: 0 1px 0 #777777;
+	text-shadow: 0 1px 0 rgba(119, 119, 119, .7);
+}
+@mixin margin-bottom {
+	margin-bottom: 15px;
+}
