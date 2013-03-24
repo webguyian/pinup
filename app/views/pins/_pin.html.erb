@@ -1,10 +1,10 @@
  <tr>
  	<td><%= pin.description %></td>
  	<td>
- 		<ul class="inline pull-right">
- 			<li><%= link_to 'View', pin %></li>
- 			<li><%= link_to 'Edit', edit_pin_path(pin) %></li>
- 			<li><%= link_to 'Remove', pin, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+ 		<ul class="pin-controls inline pull-right">
+ 			<li><%= link_to (raw("<i class=icon-eye-open></i>View")), pin %></li>
+ 			<li><%= link_to (raw("<i class=icon-pencil></i>Edit")), edit_pin_path(pin) %></li>
+ 			<li><%= link_to (raw("<i class=icon-remove></i>Remove")), pin, method: :delete, data: { confirm: 'Are you sure?' } %></li>
  		</ul>
  	</td>
 </tr>

@@ -5,15 +5,13 @@
     <tr>
       <th>Description</th>
       <th></th>
-      <th></th>
-      <th></th>
     </tr>
-    <thead>
-      <tbody>
-       <%= render @pins %>
-             </tbody>
-           </table>
+  </thead>
+  <tbody>
+   <%= render @pins %>
+ </tbody>
+</table>
 
-           <br />
+<br />
 
-           <%= link_to 'New Pin', new_pin_path %>
+<%= link_to (raw("<i class=icon-plus></i>New Pin")), new_pin_path, class: "btn btn-medium" %>

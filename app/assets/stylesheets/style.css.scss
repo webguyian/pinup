@@ -1,11 +1,10 @@
 @import 'variables';
-@import 'responsive';
-
 @import 'bootstrap';
 @import 'bootstrap-responsive';
+@import 'typography';
+@import 'responsive';
 
-body{
-}
+
 
 .navbar-inner{
 	@include box-shadow(none !important);
@@ -80,10 +79,50 @@ body{
 	}
 
 }
+.alert {
+	color: #444;
+	background-color: #f9f9f9;
+	border: 1px solid #e9e9e9;
+}
+.alert-notice {
+	color: #2e5127;
+	background-color: #84cc77;
+}
 .form-actions {
 	padding: 0;
 	background: none;
 	border-top: none;
+}
+.table-striped tbody > tr > td,
+.table-striped tbody > tr > th {
+  background-color: #f9f9f9;
+}
+.table-striped tbody > tr:nth-child(even) > td,
+.table-striped tbody > tr:nth-child(even) > th {
+  background-color: #F04155;
+  color: #ffffff;
+  border-top: 1px solid #bc0f23;
+  border-bottom: 1px solid #bc0f23;
+}
+.table-striped tbody > tr:nth-child(even) a {
+	color: #ffffff;
+}
+.table-striped tbody > tr:nth-child(even) a:hover {
+	color: #dddddd;
+}
+.table-striped td {
+	padding-bottom: 2px;
+}
+
+
+.pin-controls a {
+	text-decoration: none;
+}
+.pin-controls a:hover {
+	color: #bc0f23;
+}
+i[class^="icon-"], i[class*=" icon-"] {
+	padding-right: 4px;
 }
 
 footer {
