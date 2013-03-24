@@ -1,13 +1,12 @@
- <tr>
- 	<td><%= image_tag pin.image(:thumb) %></td>
- 	<td><%= pin.description %></td>
- 	<td>
- 		<% if current_user == pin.user %>
- 		<ul class="pin-controls inline pull-right">
- 			<li><%= link_to (raw("<i class=icon-eye-open></i>View")), pin %></li>
- 			<li><%= link_to (raw("<i class=icon-pencil></i>Edit")), edit_pin_path(pin) %></li>
- 			<li><%= link_to (raw("<i class=icon-remove></i>Remove")), pin, method: :delete, data: { confirm: 'Are you sure?' } %></li>
- 		</ul>
- 		<% end %>
- 	</td>
-</tr>
+<div class="box">
+	<%= link_to (image_tag pin.image(:thumb)), pin %>
+	<p class="desc"><%= pin.description %></p>
+	<p class="author">pinned by <%= pin.user.name %></p>
+	<% if current_user == pin.user %>
+	<ul class="pin-controls inline">
+		<li><%= link_to (raw("<i class=icon-eye-open></i>View")), pin %></li>
+		<li><%= link_to (raw("<i class=icon-pencil></i>Edit")), edit_pin_path(pin) %></li>
+		<li><%= link_to (raw("<i class=icon-remove></i>Remove")), pin, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+	</ul>
+	<% end %>
+</div>

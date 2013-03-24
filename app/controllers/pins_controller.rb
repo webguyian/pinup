@@ -3,7 +3,8 @@ class PinsController < ApplicationController
 
   # GET /pins
   def index
-    @pins = Pin.all
+    # @pins = Pin.all
+    @pins = Pin.order("created_at desc")
 
     respond_to do |format|
       format.html # index.html.erb
