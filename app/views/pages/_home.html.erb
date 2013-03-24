@@ -1,0 +1,9 @@
+<% if user_signed_in? %>
+<h2>Welcome back, <%= current_user.name %>! </h2>
+<% else %>
+<div class="hero-unit">
+	<h1>Welcome to PIN&middot;UP!</h1>
+	<p>Pin up images of your favorite things to the wall and show 'em off.</p>
+	<p> <%= link_to 'Sign up now!',  new_user_registration_path, class: "btn btn-large btn-primary" %> </p>
+</div>
+<% end %>
