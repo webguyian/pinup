@@ -1,7 +1,7 @@
 <div class="box">
 	<%= link_to (image_tag pin.image(:thumb)), pin %>
 	<p class="desc"><%= pin.description %></p>
-	<p class="author">pinned by <%= pin.user.name %></p>
+	<p class="author">pinned by <%= link_to pin.user.name, pin.user %></p>
 	<% if current_user == pin.user %>
 	<ul class="pin-controls inline">
 		<li><%= link_to (raw("<i class=icon-eye-open></i>View")), pin %></li>
