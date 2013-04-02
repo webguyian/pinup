@@ -9,5 +9,6 @@ class User < ActiveRecord::Base
   attr_accessible :name, :email, :password, :password_confirmation, :remember_me, :profile_image
 
   has_many :pins
+  has_many :boards
 
 end

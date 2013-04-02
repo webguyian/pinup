@@ -1,5 +1,6 @@
 Pinup::Application.routes.draw do
 
+  resources :boards
   resources :pins
 
   get "users/show"
