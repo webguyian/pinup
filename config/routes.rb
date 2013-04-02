@@ -3,10 +3,12 @@ Pinup::Application.routes.draw do
   resources :pins
 
   get "users/show"
+  get "users/index"
   devise_for :users
   match 'users/:id' => 'users#show', as: :user
 
   get "pages/home"
+  get 'users' => 'users#index'
   get 'about' => 'pages#about'
   
   root :to => 'pins#index'

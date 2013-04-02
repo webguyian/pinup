@@ -1,7 +1,6 @@
 <%= render 'pages/home' %>
-<div id="pins">
+<div class="pins">
 	<%= render @pins %>
 </div>
-<br />
 <%= will_paginate @pins %>
 <%= link_to (raw("<i class=icon-plus></i>New Pin")), new_pin_path, class: "btn btn-medium" %>

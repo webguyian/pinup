@@ -1,6 +1,17 @@
-<h1><%= @user.name %></h1>
-<div id="pins">
-  <%= render @pins %>
+<div class="row-fluid profile-card">
+	<div class="span4">
+		<%= gravatar_image_tag(@user.email, class: "profile-image", :gravatar => { :size => 100 }) %>
+	</div>
+	<div class="span6 push2">
+		<h1 class="profile-name"><%= @user.name %></h1>
+		<p><i class="icon-pushpin"></i><%= @user.pins.count %> pins</p>
+		<p><i class="icon-user"></i>Member since <%= @user.created_at.strftime("%Y") %>
+		</p>
+	</div>
 </div>
 
-<%= will_paginate @pins %>
+	<div class="row-fluid pins">
+		<%= render @pins %>
+	</div>
+
+	<%= will_paginate @pins %>

@@ -26,5 +26,6 @@ group :assets do
   gem 'bootstrap_flash_messages'
   gem 'font-awesome-rails'
   gem 'uglifier', '>= 1.0.3'
+  gem 'gravatar_image_tag'
 end
 
